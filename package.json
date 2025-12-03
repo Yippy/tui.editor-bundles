@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "browserify index.js --outfile prosemirror-bundle.js"
+  },
   "dependencies": {
     "@toast-ui/editor": "^3.2.2",
     "@toast-ui/editor-plugin-chart": "^3.0.1",
@@ -7,5 +10,10 @@
     "@toast-ui/editor-plugin-table-merged-cell": "^3.1.0",
     "@toast-ui/editor-plugin-uml": "^3.0.1",
     "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.1"
   }
 }
