@@ -1,6 +1,10 @@
 {
   "scripts": {
-    "build": "browserify index.js --outfile prosemirror-bundle.js"
+    "build_editor": "browserify ./modules/export-toast-ui-editor.js --s Editor --outfile toast-ui-editor-bundle.js",
+    "build_chart": "browserify ./modules/export-toast-ui-editor-plugin-chart.js --s chart --outfile toast-ui-chart-bundle.js",
+    "build_code_syntax_highlight": "browserify ./modules/export-toast-ui-editor-plugin-code-syntax-highlight.js --s codeSyntaxHighlight --outfile toast-ui-code-syntax-highlight-bundle.js",
+    "build_color_syntax": "browserify ./modules/export-toast-ui-editor-plugin-color-syntax.js --s codeColorSyntax --outfile toast-ui-color-syntax-bundle.js",
+    "build_table_merged_cell": "browserify ./modules/export-toast-ui-editor-plugin-table-merged-cell.js --s tableMergedCell --outfile toast-ui-table-merged-cell-bundle.js",
   },
   "dependencies": {
     "@toast-ui/editor": "^3.2.2",
@@ -12,8 +16,6 @@
     "jquery": "^3.7.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.5",
-    "babelify": "^10.0.0",
     "browserify": "^17.0.1"
   }
 }
