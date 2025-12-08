@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build_editor": "browserify ./modules/export-toast-ui-editor.js --s Editor --outfile ./public/toast-ui-editor-bundle.js && cp 'node_modules/@toast-ui/editor/dist/toastui-editor.css' ./public && cp 'node_modules/jquery/dist/jquery.min.js' ./public",
+    "build_editor": "browserify ./modules/export-toast-ui-editor.js --s Editor --outfile ./public/toast-ui-editor-bundle.js && cp 'node_modules/@toast-ui/editor/dist/toastui-editor.css' ./public && cp 'node_modules/@toast-ui/editor/dist/theme/toastui-editor-dark.css' ./public && cp 'node_modules/jquery/dist/jquery.min.js' ./public",
     "build_viewer": "browserify ./modules/export-toast-ui-viewer.js --s Viewer --outfile ./public/toast-ui-viewer-bundle.js && cp 'node_modules/@toast-ui/editor/dist/toastui-editor-viewer.css' ./public",
     "build_chart": "browserify ./modules/export-toast-ui-editor-plugin-chart.js --s chart --outfile ./public/toast-ui-chart-bundle.js && cp 'node_modules/@toast-ui/chart/dist/toastui-chart.min.css' ./public",
     "build_code_syntax_highlight": "browserify ./modules/export-toast-ui-editor-plugin-code-syntax-highlight.js --s codeSyntaxHighlight --outfile ./public/toast-ui-code-syntax-highlight-bundle.js && cp 'node_modules/@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css' ./public",
