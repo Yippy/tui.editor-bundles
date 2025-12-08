@@ -33,12 +33,12 @@ Plugin to color editing text
 `npm run build_color_syntax`
 > [!NOTE]
 > This will run this command:
-> `browserify ./modules/export-toast-ui-editor-plugin-color-syntax.js --s codeColorSyntax --outfile toast-ui-color-syntax-bundle.js`
+> `browserify ./modules/export-toast-ui-editor-plugin-color-syntax.js --s colorSyntax --outfile toast-ui-color-syntax-bundle.js`
 
 Plugin to merge table columns
 `npm run build_table_merged_cell`
 > [!NOTE]
 > This will run this command:
-> `browserify ./modules/export-toast-ui-editor-plugin-table-merged-cell.js --s codeColorSyntax --outfile toast-ui-table-merged-cell-bundle.js`
+> `browserify ./modules/export-toast-ui-editor-plugin-table-merged-cell.js --s tableMergedCell --outfile toast-ui-table-merged-cell-bundle.js`
 
 Plugin to render UML
