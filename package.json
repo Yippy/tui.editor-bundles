@@ -1,12 +1,12 @@
 {
   "scripts": {
-    "build_editor": "browserify ./modules/export-toast-ui-editor.js --s Editor --outfile toast-ui-editor-bundle.js",
-    "build_viewer": "browserify ./modules/export-toast-ui-viewer.js --s Viewer --outfile toast-ui-viewer-bundle.js",
-    "build_chart": "browserify ./modules/export-toast-ui-editor-plugin-chart.js --s chart --outfile toast-ui-chart-bundle.js",
-    "build_code_syntax_highlight": "browserify ./modules/export-toast-ui-editor-plugin-code-syntax-highlight.js --s codeSyntaxHighlight --outfile toast-ui-code-syntax-highlight-bundle.js",
-    "build_color_syntax": "browserify ./modules/export-toast-ui-editor-plugin-color-syntax.js --s colorSyntax --outfile toast-ui-color-syntax-bundle.js",
-    "build_table_merged_cell": "browserify ./modules/export-toast-ui-editor-plugin-table-merged-cell.js --s tableMergedCell --outfile toast-ui-table-merged-cell-bundle.js",
-    "build_uml": "browserify ./modules/export-toast-ui-editor-plugin-uml.js --s uml --outfile toast-ui-uml-bundle.js"
+    "build_editor": "browserify ./modules/export-toast-ui-editor.js --s Editor --outfile ./public/toast-ui-editor-bundle.js && cp 'node_modules/@toast-ui/editor/dist/toastui-editor.css' ./public && cp 'node_modules/jquery/dist/jquery.min.js' ./public",
+    "build_viewer": "browserify ./modules/export-toast-ui-viewer.js --s Viewer --outfile ./public/toast-ui-viewer-bundle.js && cp 'node_modules/@toast-ui/editor/dist/toastui-editor-viewer.css' ./public",
+    "build_chart": "browserify ./modules/export-toast-ui-editor-plugin-chart.js --s chart --outfile ./public/toast-ui-chart-bundle.js && cp 'node_modules/@toast-ui/chart/dist/toastui-chart.min.css' ./public",
+    "build_code_syntax_highlight": "browserify ./modules/export-toast-ui-editor-plugin-code-syntax-highlight.js --s codeSyntaxHighlight --outfile ./public/toast-ui-code-syntax-highlight-bundle.js && cp 'node_modules/@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css' ./public",
+    "build_color_syntax": "browserify ./modules/export-toast-ui-editor-plugin-color-syntax.js --s colorSyntax --outfile ./public/toast-ui-color-syntax-bundle.js && cp 'node_modules/@toast-ui/editor-plugin-color-syntax/dist/toastui-editor-plugin-color-syntax.css' ./public && cp 'node_modules/tui-color-picker/dist/tui-color-picker.css' ./public",
+    "build_table_merged_cell": "browserify ./modules/export-toast-ui-editor-plugin-table-merged-cell.js --s tableMergedCell --outfile ./public/toast-ui-table-merged-cell-bundle.js && cp 'node_modules/@toast-ui/editor-plugin-table-merged-cell/dist/toastui-editor-plugin-table-merged-cell.css' ./public",
+    "build_uml": "browserify ./modules/export-toast-ui-editor-plugin-uml.js --s uml --outfile ./public/toast-ui-uml-bundle.js"
   },
   "dependencies": {
     "@toast-ui/editor": "^3.1.0",
