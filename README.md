@@ -49,7 +49,7 @@ Plugin to merge table columns
 > `browserify ./modules/export-toast-ui-editor-plugin-table-merged-cell.js --s tableMergedCell --outfile ./public/js/toast-ui-table-merged-cell-bundle.js && cp 'node_modules/@toast-ui/editor-plugin-table-merged-cell/dist/toastui-editor-plugin-table-merged-cell.css' ./public/css`
 
 Plugin to render UML
-`npm run build_table_merged_cell`
+`npm run build_uml`
 
 Oddly the UML Plugin requires packages that was location dependant, which has caused this lengthly command for copying all the dependencies in the correct location for UML Plugin to compile.
 
